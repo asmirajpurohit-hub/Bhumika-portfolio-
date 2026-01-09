@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhumika Rajpurohit | Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Navbar */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: #020617;
+      border-bottom: 1px solid #1f2937;
+    }
+
+    .nav-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #38bdf8;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    /* Sections */
+    section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    h1, h2 {
+      margin-bottom: 1rem;
+      color: #f9fafb;
+    }
+
+    h1 {
+      font-size: 2.3rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      border-bottom: 2px solid #1f2937;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #d1d5db;
+    }
+
+    /* Hero */
+    .hero {
+      display: grid;
+      grid-template-columns: 2fr 1.2fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .hero-tag {
+      color: #38bdf8;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-sub {
+      font-size: 1rem;
+      color: #9ca3af;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .btn {
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      border: 1px solid #38bdf8;
+      cursor: pointer;
+      font-size: 0.95rem;
+      background: transparent;
+      color: #e5e7eb;
+    }
+
+    .btn-primary {
+      background: #38bdf8;
+      color: #020617;
+      border-color: #38bdf8;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    .hero-photo {
+      width: 100%;
+      max-width: 240px;
+      height: 240px;
+      border-radius: 999px;
+      border: 3px solid #38bdf8;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      background: #020617;
+    }
+
+    /* About */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 2fr 1.3fr;
+      gap: 2rem;
+    }
+
+    .about-list {
+      list-style: none;
+    }
+
+    .about-list li {
+      margin-bottom: 0.5rem;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    .about-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #38bdf8;
+    }
+
+    /* Hobbies */
+    .hobby-list {
+      list-style: none;
+    }
+
+    .hobby-list li {
+      margin-bottom: 0.5rem;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    .hobby-list li::before {
+      content: "♪";
+      position: absolute;
+      left: 0;
+      color: #f97316;
+    }
+
+    /* Contact */
+    .contact-info span {
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid #1f2937;
+      padding: 1rem 1.5rem 2rem;
+      text-align: center;
+      color: #6b7280;
+      font-size: 0.85rem;
+      margin-top: 2rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-container {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">Bhumika</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home">
+    <div class="hero">
+      <div>
+        <div class="hero-tag">Student • Music Lover</div>
+        <h1>Hi, I am Bhumika Rajpurohit</h1>
+        <p class="hero-sub">
+          Class 9 B student at Queens School who loves listening to music and playing guitar.
+        </p>
+        <p>
+          This is my personal portfolio website where you can know more about my school life,
+          my parents, and the things I enjoy doing every day.
+        </p>
+        <div class="hero-buttons">
+          <a href="#about" class="btn btn-primary">About Me</a>
+          <a href="#hobbies" class="btn">My Hobbies</a>
+        </div>
+      </div>
+      <div>
+        <!-- Add your photo link in src="" if you have one -->
+        <img
+          src=""
+          alt="Photo of Bhumika"
+          class="hero-photo"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-grid">
+      <div>
+        <p>
+          My name is <strong>Bhumika</strong> Rajpurohit and I study in Class 9 B at Queens School.
+          I am a hardworking student who enjoys learning, spending time with family, and growing my interests.
+        </p>
+        <p>
+          My parents, Vijay and Saroj, always support and encourage me in my studies and hobbies,
+          especially in music and creativity.
+        </p>
+      </div>
+      <div>
+        <ul class="about-list">
+          <li>Full Name: Bhumika Rajpurohit</li>
+          <li>School: Queens School</li>
+          <li>Class: 9 B</li>
+          <li>Parents: Vijay and Saroj</li>
+          <li>Location: (Add your city here)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hobbies -->
+  <section id="hobbies">
+    <h2>My Hobbies</h2>
+    <p>
+      In my free time, I love doing activities that relax my mind and make me happy,
+      especially those related to music.
+    </p>
+    <ul class="hobby-list">
+      <li>Listening to music</li>
+      <li>Playing guitar</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      You can use this section later to add your email or social media links
+      if you want others to contact you.
+    </p>
+    <div class="contact-info">
+      <span>Email: (add your email here)</span>
+      <span>School: Queens School</span>
+      <span>Class: 9 B</span>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 Bhumika Rajpurohit. All rights reserved.
+  </footer>
+</body>
+</html>
